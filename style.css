@@ -2,7 +2,7 @@ body{
       background-color: beige;
 }
 h1{
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     color: black;
 }
 
@@ -38,9 +38,13 @@ h1{
 }
 
 .container ul.adm{
-    font-size: medium;
     position: absolute;
     bottom: 0;
     right: 0;
     padding-right: 15px;
+}
+
+.container ul.adm a{
+    font-size: large;
+    text-decoration: none;
 }
