@@ -1,3 +1,46 @@
+body{
+      background-color: beige;
+}
+h1{
+    margin-bottom: 5%;
+    color: black;
+}
+
 .container{
-    background-color: blue;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 5%;
+    border: 3px dashed;
+    border-color: black;
+    position: relative;
+}
+
+.container ul{
+    list-style-type:none;   
+    padding: 0;
+}
+
+.container li{
+    margin-bottom: 15px;
+    font-size: 18pt;
+}
+
+.container p{
+    margin-top: 40px;
+    color: black;
+}
+
+.container a{
+    text-decoration:underline;
+    color: black;
+}
+
+.container ul.adm{
+    font-size: medium;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 15px;
 }
