@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sign Up</title>
+    <title>Início</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
 
@@ -17,13 +17,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.php">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?page=new">New User</a>
+              <a class="nav-link" href="?page=new">Novo Usuário</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?page=list">List Users</a>
+              <a class="nav-link" href="?page=list">Listar Usuários</a>
             </li>
           </ul>
         </div>
@@ -52,7 +52,7 @@
                   break;
                   
                   default:  
-                    print "<h1>Welcome!</h1>";
+                    print "<h1>Bem-vindo ao Sistema de Gerenciamento de Usuários!</h1>";
 
                 }
             ?>

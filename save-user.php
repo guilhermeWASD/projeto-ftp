@@ -12,10 +12,10 @@
 				$res = $conn->query($sql);
 				
 				if($res==true){
-					print "<script>alert('New user added');</script>";
+					print "<script>alert('Novo usuário adicionado');</script>";
 					print "<script>location.href='?page=list';</script>";
 				}else{
-					print "<script>alert('signup failed');</script>";
+					print "<script>alert('Cadastro falhou');</script>";
 					print "<script>location.href='?page=list';</script>";
 				}
 				break;
@@ -37,10 +37,10 @@
 				$res = $conn->query($sql);
 				
 				if($res==true){
-					print "<script>alert('updated successfuly');</script>";
+					print "<script>alert('Atualizado com sucesso');</script>";
 					print "<script>location.href='?page=list';</script>";
 				}else{
-					print "<script>alert('update failed');</script>";
+					print "<script>alert('Atualização falhou');</script>";
 					print "<script>location.href='?page=list';</script>";
 				}
 				break;
@@ -51,10 +51,10 @@
 				$res = $conn->query($sql);
 				
 				if($res==true){
-					print "<script>alert('Deleted successfuly');</script>";
+					print "<script>alert('Deletado com sucesso');</script>";
 					print "<script>location.href='?page=list';</script>";
 				}else{
-					print "<script>alert('Can't delete');</script>";
+					print "<script>alert('Não foi possível deletar');</script>";
 					print "<script>location.href='?page=list';</script>";
 				}
 

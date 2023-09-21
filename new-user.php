@@ -1,10 +1,10 @@
-<h1>New User</h1>
+<h1>Novo Usuário</h1> <br>
 
 <form action="?page=save" method="POST">
 	<input type="hidden" name="action" value="signup">
 
 	<div class="mb-3">
-		<label>Name</label>
+		<label>Nome</label>
 		<input type="text" name="username" class="form-control">
 	</div>
 
@@ -14,16 +14,19 @@
 	</div>
 
 	<div class="mb-3">
-		<label>Password</label>
+		<label>Senha</label>
 		<input type="password" name="txtpassword" class="form-control">
 	</div>
 
 	<div class="mb-3">
-		<label>Born Date</label>
+		<label>Data de Nascimento</label>
 		<input type="date" name="borndate" class="form-control">
+		<div id="borndateHelpBlock" class="form-text">
+			Tenha em mente que a data está sendo inserida no formato <u>mês-dia-ano</u>
+		</div>
 	</div>
 
 	<div class="mb-3">
-		<button type="submit" class="btn btn-primary">Confirm</button>
+		<button type="submit" class="btn btn-primary">Confirmar</button>
 	</div>
 </form>
