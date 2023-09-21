@@ -9,7 +9,7 @@
     if($qtd > 0){
         print "<table class='table table-hover table-striped table-bordered'>";
         print "<tr>";
-        print "<th>#</th>";
+        print "<th>ID</th>";
         print "<th>Name</th>";
         print "<th>Email</th>";
         print "<th>Borndate</th>";
@@ -22,8 +22,8 @@
             print "<td>".$row->email."</td>";
             print "<td>".$row->borndate."</td>";
             print "<td>
-                    <button onclick=\"location.href='?page=edit&id=".$row->id."';\ class='btn btn-success'>Edit</button>
-                    <button class='btn btn-danger'>Delete </button>
+                    <button onclick=\"location.href='?page=edit&id=".$row->id."';\" class='btn btn-success'>Edit</button>
+                    <button onclick=\"if(confirm('You really want to delete it?')){location.href='?page=save&action=delete&id=".$row->id."';}else{false;}\" class='btn btn-danger'>Delete </button>
                     </td>";
             print "</tr>";
         }

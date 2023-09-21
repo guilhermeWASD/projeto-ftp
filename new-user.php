@@ -1,6 +1,6 @@
 <h1>New User</h1>
 
-<form action="?page=save-user" method="POST">
+<form action="?page=save" method="POST">
 	<input type="hidden" name="action" value="signup">
 
 	<div class="mb-3">

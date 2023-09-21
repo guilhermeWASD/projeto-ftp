@@ -1,10 +1,11 @@
-<h1>Edit Info</h1>
+<h1>Edit</h1>	
 <?php
 	$sql = "SELECT * FROM users WHERE id=".$_REQUEST["id"];
 	$res = $conn->query($sql);
 	$row =  $res->fetch_object();
 ?>
-<form action="?page=edit" method="POST">
+
+<form action="?page=save" method="POST">
 	<input type="hidden" name="action" value="edit">
 	<input type="hidden" name="id" value="<?php print $row->id; ?>">
 
@@ -20,7 +21,7 @@
 
 	<div class="mb-3">
 		<label>Password</label>
-		<input type="password" name="txtpassword"  class="form-control" required>
+		<input type="password" name="txtpassword" value="" class="form-control" required>
 	</div>
 
 	<div class="mb-3">
@@ -29,6 +30,6 @@
 	</div>
 
 	<div class="mb-3">
-		<button type="submit" class="btn btn-primary">Confirm</button>
+		<button type="submit" class="btn btn-primary">Submit</button>
 	</div>
 </form>
